@@ -1,0 +1,218 @@
+Prefix(:=<http://purl.obolibrary.org/obo/vo.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/vo.owl>
+Annotation(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> "en")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Chris mungall")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Erica Marcos")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Ningxian Fan")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Paul Fabry")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Randi Vita"@en)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Ryan R. Brinkman")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Shunzhou Deng"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Alan Ruttenburg")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Alexander D. Diehl")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Barry Smith")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Bjoern Peters")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Edison Ong")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Hong Yu")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Jason Hu")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Kallan Roan")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Khadeejah Khan")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Lindsay Cowell")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Melanie Courtot")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Ningxian Fan"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Omar Tibi")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Randi Vita")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Rebecca Racz")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Richard H. Scheuermann")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Ronak Sutariya"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Samantha G. Sayers (SGS)")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Thomas Todd")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Yongqun \"Oliver\" He (YH)"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Yu Lin (YL)"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Zuoshuang \"Allen\" Xiang"@en)
+Annotation(<http://purl.org/dc/elements/1.1/date> "February 1, 2020"@en)
+Annotation(<http://purl.org/dc/elements/1.1/description> "The Vaccine Ontology (VO) is a biomedical ontology in the domain of vaccine and vaccination. VO aims to standardize vaccine annotation, integrate various vaccine data, and support computer-assisted reasoning.  VO supports basic vaccine R&D and clincal vaccine usage. VO is being developed as a community-based ontology with support and collaborations from the vaccine and bio-ontology communities."@en)
+Annotation(<http://purl.org/dc/elements/1.1/format> "OWL-DL"@en)
+Annotation(<http://purl.org/dc/elements/1.1/license> <http://creativecommons.org/licenses/by/3.0/>)
+Annotation(<http://purl.org/dc/elements/1.1/subject> "An ontology in the domain of vaccine and vaccination"@en)
+Annotation(<http://purl.org/dc/elements/1.1/title> "Vaccine Ontology"@en)
+Annotation(owl:versionInfo "1.1.84"@en)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VO_0000613>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VO_0001194>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VO_0004895>))
+Declaration(Class(<http://purl.obolibrary.org/obo/VO_0004896>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> (<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://protege.stanford.edu/plugins/owl/protege.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (<http://purl.obolibrary.org/obo/IAO_0000114>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (<http://purl.obolibrary.org/obo/IAO_0000412>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/contributor> (<http://purl.org/dc/elements/1.1/contributor>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (<http://purl.org/dc/elements/1.1/creator>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/date> (<http://purl.org/dc/elements/1.1/date>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/description> (<http://purl.org/dc/elements/1.1/description>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/format> (<http://purl.org/dc/elements/1.1/format>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/license> (<http://purl.org/dc/elements/1.1/license>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/license> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/subject> (<http://purl.org/dc/elements/1.1/subject>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/title> (<http://purl.org/dc/elements/1.1/title>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: rdfs:label (rdfs:label)
+
+AnnotationAssertion(rdfs:isDefinedBy rdfs:label <http://www.w3.org/2000/01/rdf-schema.owl>)
+
+# Annotation Property: owl:versionInfo (owl:versionInfo)
+
+AnnotationAssertion(rdfs:isDefinedBy owl:versionInfo <http://www.w3.org/2002/07/owl.owl>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (<http://purl.obolibrary.org/obo/IAO_0000136>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/iao.owl>)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: rdf:PlainLiteral (rdf:PlainLiteral)
+
+AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000109> (<http://purl.obolibrary.org/obo/IAO_0000109>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000120>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/obi.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000047> (<http://purl.obolibrary.org/obo/PATO_0000047>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/PATO_0000047> <http://purl.org/obo/owl/PATO>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000047> <http://purl.obolibrary.org/obo/pato.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/VO_0000613> (male biological sex datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VO_0000613> "‘M’ (intended to refer to a male biological sex), ‘Male’, ‘Man’, ‘1’ (intended to refer to a male biological sex)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VO_0000613> "A biological sex datum that represents the biological sex of an animal (including human) as being male.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/VO_0000613> "Paul Fabry, Oliver He")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/VO_0000613> <http://purl.obolibrary.org/obo/vo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VO_0000613> "male biological sex datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/VO_0000613> <http://purl.obolibrary.org/obo/VO_0001194>)
+
+# Class: <http://purl.obolibrary.org/obo/VO_0001194> (biological sex datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VO_0001194> "A measurement datum that represents the biological sex of an animal. The result can be represented using a discretized digit, for example, 0 = female; 1 = male.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/VO_0001194> "YH")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/VO_0001194> "He Y, Xiang Z, Todd T, Courtot M, Brinkman R, Zheng J, Stoeckert CJ, Malone J, Rocca-Serra P, Sansone S, Fostel J, Soldatova LN, Peters B, Rutternberg A. Ontology representation and ANOVA analysis of vaccine protection investigation. Proceeding of Bio-Ontologies 2010: Semantic Applications in Life Sciences, ISMB, July 9-10, 2010. Boston, MA, USA. Full length paper. URL: http://www.hegroup.org/docs/ANOVA_Vaccine_usecase_camera.pdf")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/VO_0001194> "Todd TE, Tibi O, Lin Y, Sayers S, Bronner DN, Xiang Z, He Y. Meta-analysis of variables affecting mouse protection efficacy of whole organism Brucella vaccines and vaccine candidates. BMC Bioinformatics. 2013, 14(Suppl 6):S3. PMID: 23735014. PMCID: PMC3633026. ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/VO_0001194> <http://purl.obolibrary.org/obo/vo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VO_0001194> "biological sex datum")
+SubClassOf(<http://purl.obolibrary.org/obo/VO_0001194> <http://purl.obolibrary.org/obo/IAO_0000109>)
+SubClassOf(<http://purl.obolibrary.org/obo/VO_0001194> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/PATO_0000047>))
+
+# Class: <http://purl.obolibrary.org/obo/VO_0004895> (female biological sex datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VO_0004895> "‘F’ (intended to refer to a female biological sex), ‘Female’, ‘Woman’, ‘0’ (intended to refer to a female biological sex)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VO_0004895> "A biological sex datum that represents the biological sex of an animal (including human) as being female.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/VO_0004895> "Paul Fabry, Oliver He")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/VO_0004895> <http://purl.obolibrary.org/obo/vo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VO_0004895> "female biological sex datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/VO_0004895> <http://purl.obolibrary.org/obo/VO_0001194>)
+
+# Class: <http://purl.obolibrary.org/obo/VO_0004896> (intersex biological sex datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/VO_0004896> "‘I’ (intended to refer to an intersex biological sex), ‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, ‘2’ (intended to refer to an intersex biological sex)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/VO_0004896> "A biological sex datum that represents the biological sex of an animal (including human) as being intersex.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/VO_0004896> "Paul Fabry, Oliver He")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/VO_0004896> <http://purl.obolibrary.org/obo/vo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/VO_0004896> "intersex biological sex datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/VO_0004896> <http://purl.obolibrary.org/obo/VO_0001194>)
+
+
+)

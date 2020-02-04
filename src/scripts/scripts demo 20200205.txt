@@ -1,0 +1,29 @@
+demo scripts using robot
+
+	- OPMI import
+
+robot extract --method BOT --input "TARGET_FOLDER\opmi\src\ontology\opmi.owl" --term-file opmi_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\opmi_for_demo.owl
+
+	- IAO import
+
+robot extract --method BOT --input "TARGET_FOLDER\IAO\src\ontology\iao-edit.owl" --term-file iao_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\iao_for_demo.owl
+
+	- OMRSE import
+
+robot extract --method BOT --input "TARGET_FOLDER\OMRSE\omrse\omrse.owl" --term-file omrse_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output omrse_for_demo.owl
+
+	- VO import
+
+robot extract --method BOT --input "TARGET_FOLDER\VO\src\vo.owl" --term-file vo_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\vo_for_demo.owl
+
+	- OBI import
+	
+robot extract --method BOT --input "TARGET_FOLDER\obi\src\ontology\obi-edit.owl" --term-file obi_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude --imports exclude convert --format ofn --output ..\imports\obi_for_demo.owl
+
+	- PATO import
+
+robot extract --method BOT --input "TARGET_FOLDER\pato\pato-base.owl" --term-file pato_import_for_demo.txt --copy-ontology-annotations true --annotate-with-source true --individuals exclude convert --format ofn --output pato_for_demo.owl
+
+	-  Merge demo
+
+robot merge --input ..\demo.owl --output ..\..\merged\demo-merged.owl

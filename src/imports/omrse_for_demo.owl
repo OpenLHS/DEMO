@@ -1,0 +1,392 @@
+Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Daniel Welch")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Amanda Hicks")
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Mathias Brochhausen"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Shariq Tariq"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Swetha Garimalla"@en)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "William Hogan"@en)
+Annotation(<http://purl.org/dc/elements/1.1/license> "CC-BY 4.0")
+Annotation(rdfs:comment "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"@en)
+Annotation(rdfs:label "The Ontology of Medically Related Social Entities"@en)
+Annotation(owl:versionInfo "2020-01-30")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000163>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000168>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000173>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000507>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000059>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (<http://purl.obolibrary.org/obo/IAO_0000111>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (<http://purl.obolibrary.org/obo/IAO_0000118>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/contributor> (<http://purl.org/dc/elements/1.1/contributor>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/creator> (<http://purl.org/dc/elements/1.1/creator>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: <http://purl.org/dc/elements/1.1/license> (<http://purl.org/dc/elements/1.1/license>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/license> <http://purl.org/dc/elements/1.1.owl>)
+
+# Annotation Property: rdfs:comment (rdfs:comment)
+
+AnnotationAssertion(rdfs:isDefinedBy rdfs:comment <http://www.w3.org/2000/01/rdf-schema.owl>)
+
+# Annotation Property: rdfs:label (rdfs:label)
+
+AnnotationAssertion(rdfs:isDefinedBy rdfs:label <http://www.w3.org/2000/01/rdf-schema.owl>)
+
+# Annotation Property: owl:versionInfo (owl:versionInfo)
+
+AnnotationAssertion(rdfs:isDefinedBy owl:versionInfo <http://www.w3.org/2002/07/owl.owl>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000050> (<http://purl.obolibrary.org/obo/BFO_0000050>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000051> (<http://purl.obolibrary.org/obo/BFO_0000051>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (<http://purl.obolibrary.org/obo/BFO_0000054>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (<http://purl.obolibrary.org/obo/BFO_0000055>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (<http://purl.obolibrary.org/obo/IAO_0000136>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (<http://purl.obolibrary.org/obo/OBI_0000299>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/obi.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (<http://purl.obolibrary.org/obo/OBI_0000312>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/obi.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (inheres in)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "'inheres in at all times'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "inheres_in"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/ro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "inheres in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (is bearer of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "bearer of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "bearer_of"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/ro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "is bearer of"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000056> (<http://purl.obolibrary.org/obo/RO_0000056>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/ro.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000057> (<http://purl.obolibrary.org/obo/RO_0000057>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/ro.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (<http://purl.obolibrary.org/obo/RO_0000058>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000058> "concretized by at some time"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000058> <http://purl.obolibrary.org/obo/ro.owl>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000059> (<http://purl.obolibrary.org/obo/RO_0000059>)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0000059> "It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  "@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/ro.owl>)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: rdf:PlainLiteral (rdf:PlainLiteral)
+
+AnnotationAssertion(rdfs:isDefinedBy rdf:PlainLiteral <http://www.w3.org/1999/02/22-rdf-syntax-ns.owl>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (<http://purl.obolibrary.org/obo/BFO_0000015>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (<http://purl.obolibrary.org/obo/BFO_0000020>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000023> (<http://purl.obolibrary.org/obo/BFO_0000023>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (<http://purl.obolibrary.org/obo/BFO_0000040>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/bfo.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000310> (<http://purl.obolibrary.org/obo/IAO_0000310>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/iao.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020021> (identity document)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020021> "a document that denotes some identity and is concretized by the bearer of some credential role"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020021> "Amanda Hicks")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0020021> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020021> "identity document"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000310> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0020022>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/IAO_0020024>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/IAO_0020024>))))))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020022> (documented identity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020022> "a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020022> "Amanda Hicks")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0020022> "is an aggregate of ICEs also an ICE? yes
+Is part_of the appropriate relation to use for data items and documented identities?"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0020022> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020022> "documented identity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020022> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020022> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>) ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/IAO_0000136>) <http://purl.obolibrary.org/obo/IAO_0020021>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>)))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020023> (authentication)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0020023> " I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020023> "Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). 
+"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020023> "Amanda Hicks")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0020023> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020023> "authentication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020023> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/IAO_0020024>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/IAO_0000027>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/IAO_0000136>) <http://purl.obolibrary.org/obo/IAO_0000027>))))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020024> (credential role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020024> " a role that inheres in a concretization of an identity document and is realized by an authentication process"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020024> "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0020024> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020024> "credential role"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020024> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/IAO_0020023>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0020021>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020024> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0021003> (social act)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0021003> "Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0021003> "A process that is carried out by a conscious being or an aggregate of conscious beings and is spontaneous, directed towards other conscious beings and aggregates thereof and needs to be perceived."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0021003> "Mathias Brochhausen")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0021003> "MB: Regarding the use of the term 'sponteneous' in the definition:
+The term is used in the following meaning of being self generated. It does not stand in contrast to being planned."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0021003> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0021003> "social act"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0021003> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (<http://purl.obolibrary.org/obo/NCBITaxon_9606>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (<http://purl.obolibrary.org/obo/OBI_0000011>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/obi.owl>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000048> (material entity role)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000048> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000048> "material entity role"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000048> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/BFO_0000040>))
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000132> (identity datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000132> "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> <http://purl.obolibrary.org/obo/OMRSE_00000132> "Amanda Hicks")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000132> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000132> "identity datum"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000132> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/IAO_0020022>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OMRSE_00000134>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000132> <http://purl.obolibrary.org/obo/OMRSE_00000179>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000133> (gender identity datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000133> "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> <http://purl.obolibrary.org/obo/OMRSE_00000133> "Amanda Hicks")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000133> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000133> "gender identity datum"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000133> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OMRSE_00000132> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/IAO_0020022>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OMRSE_00000135>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000134> (identification process)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> <http://purl.obolibrary.org/obo/OMRSE_00000134> "Amanda Hicks")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000134> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000134> "identification process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000134> <http://purl.obolibrary.org/obo/IAO_0021003>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000134> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000135> (gender identification process)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000135> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000135> "gender identification process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000135> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OMRSE_00000134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/OMRSE_00000133>))))
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000138> (female gender identity datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000138> "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000138> "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000138> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000138> "female gender identity datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000138> <http://purl.obolibrary.org/obo/OMRSE_00000133>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000141> (male gender identity datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000141> "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000141> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMRSE_00000141> ""@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000141> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000141> "male gender identity datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000141> <http://purl.obolibrary.org/obo/OMRSE_00000133>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000163> (response to a question asking process)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000163> "Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000163> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000163> "response to a question asking process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000163> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000163> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/OMRSE_00000168>))
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000168> (questions asking process)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000168> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000168> "questions asking process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000168> <http://purl.obolibrary.org/obo/IAO_0021003>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000168> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000168> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/OMRSE_00000173>))
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000173> (material information bearer of question text plus answer set)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000173> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000173> "material information bearer of question text plus answer set"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000173> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000175> (response to an identity question asking process)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000175> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000175> "response to an identity question asking process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000175> <http://purl.obolibrary.org/obo/OMRSE_00000163>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000179> (answer to identity question)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000179> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000179> "answer to identity question"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000179> <http://purl.obolibrary.org/obo/OMRSE_00000175>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000507> (non-binary gender identity datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OMRSE_00000507> "non-binary gender identity datum"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000507> "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000507> "Paul Fabry"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000507> "William Hogan"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000507> "Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)
+
+Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMRSE_00000507> <http://purl.obolibrary.org/obo/omrse.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000507> "non-binary gender identity datum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000507> <http://purl.obolibrary.org/obo/OMRSE_00000133>)
+
+
+)
