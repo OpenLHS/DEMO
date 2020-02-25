@@ -1,221 +1,451 @@
-Prefix(:=<http://purl.obolibrary.org/obo/demo.owl#>)
-Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
-Prefix(obo:=<http://purl.obolibrary.org/obo/>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(terms:=<http://purl.org/dc/terms/>)
-Prefix(ontoneo:=<http://purl.obolibrary.org/obo/ontoneo/>)
-Prefix(protege:=<http://protege.stanford.edu/plugins/owl/protege#>)
-Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
-Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/demo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/demo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontoneo="http://purl.obolibrary.org/obo/ontoneo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/demo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/2020-02-04/demo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/opmi.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/iao-edit.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/obi_core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/dev/obi-edit.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pato/pato-simple.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core-subset.owl"/>
+        <dc:creator>Adrien Barton</dc:creator>
+        <dc:creator>Jean-François Éthier</dc:creator>
+        <dc:creator>Olivier Grenier</dc:creator>
+        <dc:creator>Paul Fabry</dc:creator>
+        <rdfs:comment xml:lang="en">An ontology for identification of individuals in the healthcare domain.</rdfs:comment>
+    </owl:Ontology>
+    
 
 
-Ontology(<http://purl.obolibrary.org/obo/demo.owl>
-<http://purl.obolibrary.org/obo/2020-02-04/demo.owl>
-Import(<http://purl.obolibrary.org/obo/omrse.owl>)
-Import(<http://purl.obolibrary.org/obo/opmi.owl>)
-Import(<http://purl.obolibrary.org/obo/vo.owl>)
-Import(<http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl>)
-Import(<http://purl.obolibrary.org/obo/iao/iao-edit.owl>)
-Import(<http://purl.obolibrary.org/obo/obi/obi_core.owl>)
-Import(<http://purl.obolibrary.org/obo/obi/dev/obi-edit.owl>)
-Import(<http://purl.obolibrary.org/obo/pato/pato-simple.owl>)
-Import(<http://purl.obolibrary.org/obo/ro/core-subset.owl>)
-Annotation(dc:creator "Adrien Barton")
-Annotation(dc:creator "Jean-François Éthier")
-Annotation(dc:creator "Olivier Grenier")
-Annotation(dc:creator "Paul Fabry")
-Annotation(rdfs:comment "An ontology for identification of individuals in the healthcare domain."@en)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-Declaration(Class(<http://griis.ca/GRIIS_TEMP_00000004>))
-Declaration(Class(obo:BFO_0000015))
-Declaration(Class(obo:BFO_0000020))
-Declaration(Class(obo:BFO_0000035))
-Declaration(Class(obo:BFO_0000038))
-Declaration(Class(obo:DEMO_0000013))
-Declaration(Class(obo:DEMO_0000017))
-Declaration(Class(obo:DEMO_0000018))
-Declaration(Class(obo:DEMO_0000019))
-Declaration(Class(obo:DEMO_0000025))
-Declaration(Class(obo:DEMO_0000026))
-Declaration(Class(obo:DEMO_0000044))
-Declaration(Class(obo:DEMO_0000045))
-Declaration(Class(obo:DEMO_0000046))
-Declaration(Class(obo:DEMO_0000047))
-Declaration(Class(obo:DEMO_0000048))
-Declaration(Class(obo:IAO_0000030))
-Declaration(Class(obo:NCBITaxon_9606))
-Declaration(Class(obo:OBI_0000011))
-Declaration(Class(obo:OMRSE_00000133))
-Declaration(Class(obo:PATO_0000001))
-Declaration(Class(obo:PATO_0000047))
-Declaration(Class(obo:VO_0000613))
-Declaration(Class(obo:VO_0001194))
-Declaration(Class(obo:VO_0004895))
-Declaration(Class(obo:VO_0004896))
-Declaration(ObjectProperty(obo:IAO_0000136))
-Declaration(ObjectProperty(obo:IAO_0000219))
-Declaration(ObjectProperty(obo:RO_0000057))
-Declaration(AnnotationProperty(obo:IAO_0000112))
-Declaration(AnnotationProperty(obo:IAO_0000115))
-Declaration(AnnotationProperty(dc:creator))
+    
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-############################
-#   Classes
-############################
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
 
-# Class: <http://griis.ca/GRIIS_TEMP_00000004> (non-binary gender identity datum)
 
-AnnotationAssertion(obo:IAO_0000112 <http://griis.ca/GRIIS_TEMP_00000004> "‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)"@en)
-AnnotationAssertion(obo:IAO_0000115 <http://griis.ca/GRIIS_TEMP_00000004> "A gender identity datum resulting from a gender identification process in which ‘non-binary’ is selected based on the participant's subjective sense of gender."@en)
-AnnotationAssertion(rdfs:label <http://griis.ca/GRIIS_TEMP_00000004> "non-binary gender identity datum"@en)
-SubClassOf(<http://griis.ca/GRIIS_TEMP_00000004> obo:OMRSE_00000133)
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-# Class: obo:DEMO_0000013 (DEPRECATED biological sex specification)
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
 
-AnnotationAssertion(rdfs:comment obo:DEMO_0000013 "VO:Biological sex datum is the preferred class."^^xsd:string)
-AnnotationAssertion(rdfs:label obo:DEMO_0000013 "DEPRECATED biological sex specification"@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000013 "DEPRECATED spécification de sexe biologique"@fr)
-AnnotationAssertion(owl:deprecated obo:DEMO_0000013 "true"^^xsd:boolean)
 
-# Class: obo:DEMO_0000017 (human birth date specification)
+    <!-- http://purl.org/dc/elements/1.1/creator -->
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000017 "Date of birth: 1802/02/26"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000017 "A temporal specification which is about the birth date of a person."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000017 "Une spécification temporelle qui est à propos de la date de naissance d'une personne."@fr)
-AnnotationAssertion(rdfs:comment obo:DEMO_0000017 "AB: Cette classe est toujours délicate. N'importe quelle date specification est à propos d'un intervalle de 24h pendant lequel une personne naît, donc devrait être une human birth date specification. L'idée, c'est qu'une ICE est une human birth date specification lorsqu'elle joue le rôle d'indiquer la date de naissance de quelqu'un. Mais on n'a pas encore formalisé les rôles d'ICE. Je laisserais comme ça pour l'instant, mais se souvenir que c'est problématique."@fr)
-AnnotationAssertion(rdfs:label obo:DEMO_0000017 "human birth date specification"@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000017 "spécification de date de naissance d'être humain"@fr)
-SubClassOf(obo:DEMO_0000017 obo:DEMO_0000044)
-SubClassOf(obo:DEMO_0000017 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:RO_0000057 obo:NCBITaxon_9606))))
-SubClassOf(obo:DEMO_0000017 ObjectSomeValuesFrom(obo:IAO_0000219 obo:BFO_0000038))
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
 
-# Class: obo:DEMO_0000018 (spécification de date de décès d'humain)
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000018 "Date of death: 1885/05/22"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000018 "A temporal specification which is about the date of death of a person."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000018 "Une spécification de date de décès qui est à propos de la date de décès d'un être humain."@fr)
-AnnotationAssertion(rdfs:comment obo:DEMO_0000018 "cf. commentaire 'human birth date specification'"@fr)
-AnnotationAssertion(rdfs:label obo:DEMO_0000018 "human death date specification"@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000018 "spécification de date de décès d'humain"@fr)
-SubClassOf(obo:DEMO_0000018 obo:DEMO_0000044)
-SubClassOf(obo:DEMO_0000018 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:RO_0000057 obo:NCBITaxon_9606))))
-SubClassOf(obo:DEMO_0000018 ObjectSomeValuesFrom(obo:IAO_0000219 obo:BFO_0000038))
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-# Class: obo:DEMO_0000019 (DEPRECATED spécification de sexe biologique d'humain)
+    
 
-AnnotationAssertion(rdfs:label obo:DEMO_0000019 "DEPRECATED human biological sex specification"@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000019 "DEPRECATED spécification de sexe biologique d'humain"@fr)
-AnnotationAssertion(owl:deprecated obo:DEMO_0000019 "true"^^xsd:boolean)
 
-# Class: obo:DEMO_0000025 (beginning process boundary)
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
-AnnotationAssertion(rdfs:label obo:DEMO_0000025 "beginning process boundary"@en)
-SubClassOf(obo:DEMO_0000025 obo:BFO_0000035)
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
 
-# Class: obo:DEMO_0000026 (ending process boundary)
 
-AnnotationAssertion(rdfs:label obo:DEMO_0000026 "ending process boundary"@en)
-SubClassOf(obo:DEMO_0000026 obo:BFO_0000035)
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
-# Class: obo:DEMO_0000044 (temporal specification)
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000044 "'Date of birth: 1802/02/26'
 
-'Date of death: 1885/05/22'"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000044 "An information content entity which is about a specific period of time."@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000044 "temporal specification"@en)
-EquivalentClasses(obo:DEMO_0000044 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:IAO_0000219 obo:BFO_0000038)))
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
-# Class: obo:DEMO_0000045 (biological sex or gender identity datum)
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000045 "‘F’ (intended to refer to a female biological sex), 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://griis.ca/GRIIS_TEMP_00000004 -->
+
+    <owl:Class rdf:about="http://griis.ca/GRIIS_TEMP_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <obo:IAO_0000112 xml:lang="en">‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non-binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">non-binary gender identity datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000013">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VO:Biological sex datum is the preferred class.</rdfs:comment>
+        <rdfs:label xml:lang="en">DEPRECATED biological sex specification</rdfs:label>
+        <rdfs:label xml:lang="fr">DEPRECATED spécification de sexe biologique</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DEMO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Date of birth: 1802/02/26</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal specification which is about the birth date of a person.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="fr">Une spécification temporelle qui est à propos de la date de naissance d&apos;une personne.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="fr">AB: Cette classe est toujours délicate. N&apos;importe quelle date specification est à propos d&apos;un intervalle de 24h pendant lequel une personne naît, donc devrait être une human birth date specification. L&apos;idée, c&apos;est qu&apos;une ICE est une human birth date specification lorsqu&apos;elle joue le rôle d&apos;indiquer la date de naissance de quelqu&apos;un. Mais on n&apos;a pas encore formalisé les rôles d&apos;ICE. Je laisserais comme ça pour l&apos;instant, mais se souvenir que c&apos;est problématique.</rdfs:comment>
+        <rdfs:label xml:lang="en">human birth date specification</rdfs:label>
+        <rdfs:label xml:lang="fr">spécification de date de naissance d&apos;être humain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DEMO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Date of death: 1885/05/22</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A temporal specification which is about the date of death of a person.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="fr">Une spécification de date de décès qui est à propos de la date de décès d&apos;un être humain.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="fr">cf. commentaire &apos;human birth date specification&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">human death date specification</rdfs:label>
+        <rdfs:label xml:lang="fr">spécification de date de décès d&apos;humain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000019">
+        <rdfs:label xml:lang="en">DEPRECATED human biological sex specification</rdfs:label>
+        <rdfs:label xml:lang="fr">DEPRECATED spécification de sexe biologique d&apos;humain</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:label xml:lang="en">beginning process boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <rdfs:label xml:lang="en">ending process boundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000044">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">&apos;Date of birth: 1802/02/26&apos;
+
+&apos;Date of death: 1885/05/22&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity which is about a specific period of time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">temporal specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000045">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/VO_0001194"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">‘F’ (intended to refer to a female biological sex), 
 ‘F’ (intended to refer to a female gender role), 
 ‘Female’, ‘Woman’, ‘0’ (intended to refer to a female biological sex), 
 ‘1’ (intended to refer to a female biological role), 
 ‘M’, ‘Male’, ‘Man’, ‘0’ (intended to refer to a male biological role), 
 ‘HF’ (intended to refer to a hermaphrodite sex), 
-‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘Other’ (intended to refer to a gender role not-listed in the list containing this data item)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000045 "An information content entity that is intended to denote a biological sex or a gender identity."@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000045 "biological sex or gender identity datum"@en)
-EquivalentClasses(obo:DEMO_0000045 ObjectUnionOf(obo:OMRSE_00000133 obo:VO_0001194))
-SubClassOf(obo:DEMO_0000045 obo:IAO_0000030)
+‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘Other’ (intended to refer to a gender role not-listed in the list containing this data item)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to denote a biological sex or a gender identity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biological sex or gender identity datum</rdfs:label>
+    </owl:Class>
+    
 
-# Class: obo:DEMO_0000046 (female biological sex or gender identity datum)
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000046 "‘F’ (intended to refer to a female biological sex), 
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DEMO_0000045"/>
+        <obo:IAO_0000112 xml:lang="en">‘F’ (intended to refer to a female biological sex), 
 ‘F’ (intended to refer to a female gender identity), 
 ‘W’, ‘Female’, ‘Woman’, ‘0’ (intended to refer to a female biological sex), 
-‘1’ (intended to refer to a female biological role)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000046 "A biological sex or gender identity datum that is intended to denote a female biological sex or a female gender identity."@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000046 "female biological sex or gender identity datum"@en)
-SubClassOf(obo:DEMO_0000046 obo:DEMO_0000045)
+‘1’ (intended to refer to a female biological role)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex or gender identity datum that is intended to denote a female biological sex or a female gender identity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">female biological sex or gender identity datum</rdfs:label>
+    </owl:Class>
+    
 
-# Class: obo:DEMO_0000047 (male biological sex or gender identity datum)
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000047 "‘M’ (intended to refer to a male biological sex), 
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DEMO_0000045"/>
+        <obo:IAO_0000112 xml:lang="en">‘M’ (intended to refer to a male biological sex), 
 ‘M’ (intended to refer to a male gender identity), 
 ‘Male’, ‘Man’, ‘1’ (intended to refer to a male biological sex), 
-‘0’ (intended to refer to a male biological role)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000047 "A biological sex or gender identity datum that is intended to denote a male biological sex or a male gender identity."@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000047 "male biological sex or gender identity datum"@en)
-SubClassOf(obo:DEMO_0000047 obo:DEMO_0000045)
+‘0’ (intended to refer to a male biological role)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex or gender identity datum that is intended to denote a male biological sex or a male gender identity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">male biological sex or gender identity datum</rdfs:label>
+    </owl:Class>
+    
 
-# Class: obo:DEMO_0000048 (intersex biological sex or non-binary gender identity datum)
 
-AnnotationAssertion(obo:IAO_0000112 obo:DEMO_0000048 "‘I’ (intended to refer to an intersex biological sex), 
+    <!-- http://purl.obolibrary.org/obo/DEMO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DEMO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DEMO_0000045"/>
+        <obo:IAO_0000112 xml:lang="en">‘I’ (intended to refer to an intersex biological sex), 
 ‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, 
 ‘2’ (intended to refer to an intersex biological sex). 
-‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:DEMO_0000048 "A biological sex or gender identity datum that is intended to denote a intersex biological sex or a non-binary gender identity."@en)
-AnnotationAssertion(rdfs:label obo:DEMO_0000048 "intersex biological sex or non-binary gender identity datum"@en)
-SubClassOf(obo:DEMO_0000048 obo:DEMO_0000045)
-
-# Class: obo:OBI_0000011 (planned process)
-
-SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
-
-# Class: obo:PATO_0000001 (quality)
-
-SubClassOf(obo:PATO_0000001 obo:BFO_0000020)
-
-# Class: obo:VO_0000613 (male biological sex datum)
-
-AnnotationAssertion(obo:IAO_0000112 obo:VO_0000613 "‘M’ (intended to refer to a male biological sex), 
-‘Male’, ‘Man’, ‘1’ (intended to refer to a male biological sex)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VO_0000613 "A biological sex measurement datum that is intended to denote a male biological sex."@en)
-AnnotationAssertion(rdfs:label obo:VO_0000613 "male biological sex datum"@en)
-SubClassOf(obo:VO_0000613 obo:VO_0001194)
-
-# Class: obo:VO_0004895 (female biological sex datum)
-
-AnnotationAssertion(obo:IAO_0000112 obo:VO_0004895 "‘F’ (intended to refer to a female biological sex),
-‘Female’, ‘Woman’, ‘0’ (intended to refer to a female biological sex)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VO_0004895 "A biological sex measurement datum that is intended to denote a female biological sex."@en)
-AnnotationAssertion(rdfs:label obo:VO_0004895 "female biological sex datum"@en)
-SubClassOf(obo:VO_0004895 obo:VO_0001194)
-
-# Class: obo:VO_0004896 (intersex biological sex datum)
-
-AnnotationAssertion(obo:IAO_0000112 obo:VO_0004896 "‘I’ (intended to refer to an intersex biological sex), 
-‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, ‘2’ (intended to refer to an intersex biological sex)"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:VO_0004896 "A biological sex measurement datum that is intended to denote an intersex biological sex."@en)
-AnnotationAssertion(rdfs:label obo:VO_0004896 "intersex biological sex datum"@en)
-SubClassOf(obo:VO_0004896 obo:VO_0001194)
+‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex or gender identity datum that is intended to denote a intersex biological sex or a non-binary gender identity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intersex biological sex or non-binary gender identity datum</rdfs:label>
+    </owl:Class>
+    
 
 
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0020000 "Une entité de contenu informationnel qui est le résultat d'un processus de dénomination d'une entité et dont l'usage est partagé par un groupe d'individus qui s'en servent pour référer à cette entité."@fr)
-AnnotationAssertion(rdfs:label obo:IAO_0020000 "nom propre"@fr)
-AnnotationAssertion(obo:IAO_0000115 ontoneo:ONTONEO_00000259 "An information content entity which is about a date."@en)
-AnnotationAssertion(obo:IAO_0000115 ontoneo:ONTONEO_00000259 "Une entité de contenu informationnel qui est à propos d'une date."@fr)
-AnnotationAssertion(rdfs:label ontoneo:ONTONEO_00000259 "spécification de date"@fr)
-AnnotationAssertion(obo:IAO_0000115 ontoneo:ONTONEO_00000263 "A date content which is about a birth date."@en)
-AnnotationAssertion(obo:IAO_0000115 ontoneo:ONTONEO_00000263 "Une spécification de date qui est à propos d'une date de naissance."@fr)
-AnnotationAssertion(rdfs:label ontoneo:ONTONEO_00000263 "spécification de date de naissance"@fr)
-)
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0001194"/>
+        <obo:IAO_0000112 xml:lang="en">‘M’ (intended to refer to a male biological sex), 
+‘Male’, ‘Man’, ‘1’ (intended to refer to a male biological sex)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex measurement datum that is intended to denote a male biological sex.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">male biological sex datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0001194"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0004895 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0004895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0001194"/>
+        <obo:IAO_0000112 xml:lang="en">‘F’ (intended to refer to a female biological sex),
+‘Female’, ‘Woman’, ‘0’ (intended to refer to a female biological sex)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex measurement datum that is intended to denote a female biological sex.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">female biological sex datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0004896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0004896">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0001194"/>
+        <obo:IAO_0000112 xml:lang="en">‘I’ (intended to refer to an intersex biological sex), 
+‘Intersex’, ‘Hermaphrodite’, ‘Pseudo-hermaphrodite’, ‘2’ (intended to refer to an intersex biological sex)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A biological sex measurement datum that is intended to denote an intersex biological sex.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intersex biological sex datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
+        <obo:IAO_0000115 xml:lang="fr">Une entité de contenu informationnel qui est le résultat d&apos;un processus de dénomination d&apos;une entité et dont l&apos;usage est partagé par un groupe d&apos;individus qui s&apos;en servent pour référer à cette entité.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">nom propre</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000259">
+        <obo:IAO_0000115 xml:lang="en">An information content entity which is about a date.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="fr">Une entité de contenu informationnel qui est à propos d&apos;une date.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">spécification de date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000263">
+        <obo:IAO_0000115 xml:lang="en">A date content which is about a birth date.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="fr">Une spécification de date qui est à propos d&apos;une date de naissance.</obo:IAO_0000115>
+        <rdfs:label xml:lang="fr">spécification de date de naissance</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
