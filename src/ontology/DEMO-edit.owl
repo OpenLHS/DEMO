@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/DEMO.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,36 +9,60 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/DEMO.owl>
-
 Import(<http://purl.obolibrary.org/obo/DEMO/imports/NOYO_import.owl>)
-
-
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "DEMographics Ontology")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000000>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000001>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000002>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000003>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/DEMO_0000000> (root node)
+# Class: <http:/purl.obolibrary.org/obo/DEMO_0000001> (biological sex or gender identity information content entity)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/DEMO_0000001> "An information content entity that is intended to denote a biological sex or a gender identity."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/DEMO_0000001> "biological sex or gender identity information content entity"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000001> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+
+# Class: <http:/purl.obolibrary.org/obo/DEMO_0000002> (human birth date)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/DEMO_0000002> "A process temporal specification that is about the birth date of an homo sapiens."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/DEMO_0000002> "human birth date"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000002> <http:/purl.obolibrary.org/obo/NOYO_0000010>)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+
+# Class: <http:/purl.obolibrary.org/obo/DEMO_0000003> (human death date)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/DEMO_0000003> "A process temporal specification that is about the date of death of an homo sapiens."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/DEMO_0000003> "human death date"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000003> <http:/purl.obolibrary.org/obo/NOYO_0000010>)
+SubClassOf(<http:/purl.obolibrary.org/obo/DEMO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 
 
 )
-
