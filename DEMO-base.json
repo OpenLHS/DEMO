@@ -16,15 +16,11 @@
         "val" : "DEMographics Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-04-25"
+        "val" : "2023-04-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/DEMO/releases/2023-04-25/DEMO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/DEMO/releases/2023-04-26/DEMO-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/DEMO_0000000",
-      "lbl" : "root node",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY"
@@ -36,6 +32,58 @@
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
       "type" : "PROPERTY"
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/DEMO_0000001",
+      "lbl" : "biological sex or gender identity information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is intended to denote a biological sex or a gender identity."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/DEMO_0000002",
+      "lbl" : "human birth date",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process temporal specification that is about the birth date of an homo sapiens."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/DEMO_0000003",
+      "lbl" : "human death date",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process temporal specification that is about the date of death of an homo sapiens."
+        }
+      }
+    } ],
+    "edges" : [ {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000001",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000002",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000010"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000002",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000003",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000010"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/DEMO_0000003",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     } ]
   } ]
 }
