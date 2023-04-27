@@ -14,11 +14,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DEMO.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DEMO/releases/2023-04-26/DEMO.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DEMO/releases/2023-04-27/DEMO.owl"/>
         <terms:description>None</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>DEMographics Ontology</terms:title>
-        <owl:versionInfo>2023-04-26</owl:versionInfo>
+        <owl:versionInfo>2023-04-27</owl:versionInfo>
     </owl:Ontology>
     
 
