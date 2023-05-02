@@ -16,13 +16,13 @@ This work is licensed under a
 
 ## Description: 
 
-DEMO is an ontology of informational entities about demographics data for Learning Health System
+DEMO is an ontology of informational entities about demographics data for Learning Health System.
 
 ## Versions
 
 ### Stable release versions
 
-[Here](https://github.com/OpenLHS/DEMO/releases/latest)
+The latest stable version can be found [Here](https://github.com/OpenLHS/DEMO/releases/latest)
 
 ### Editors' version
 
