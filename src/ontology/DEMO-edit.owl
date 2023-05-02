@@ -9,11 +9,13 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/DEMO.owl>
-Import(<http://purl.obolibrary.org/obo/DEMO/imports/NOYO_import.owl>)
+Import(<http://purl.obolibrary.org/obo/DEMO/releases/2023-05-02/imports/NOYO_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "DEMographics Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DEMO_0000011>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000001>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000002>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/DEMO_0000003>))
@@ -42,6 +44,18 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/DEMO_0000010> (patient identifier)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DEMO_0000010> "A human identifier that denotes a particular patient."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000010> "patient identifier"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DEMO_0000010> <http://purl.obolibrary.org/obo/NOYO_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/DEMO_0000011> (human biological sex)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/DEMO_0000011> "An information content entity that denotes the biological sex of a human."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEMO_0000011> "human biological sex"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/DEMO_0000011> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http:/purl.obolibrary.org/obo/DEMO_0000001> (biological sex or gender identity information content entity)
 
